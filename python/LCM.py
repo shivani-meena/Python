@@ -1,8 +1,20 @@
-a, b = map(int, input().split())
-i = 1
-while True
-    if i % a == 0 and i % b == 0:
-        print( i )
-        break
-    i += 1 
-        
+num1 = int(input())
+num2 = int(input())
+i = 2
+a = []
+b = []
+while num1 > 1:
+	if num1 % i == 0:
+		a += [i]
+		num1 = num1 // i
+	else:
+		i += 1 
+j = 2 
+while num2 > 1:
+	if num2 % j == 0:
+		b += [j]
+		num2 = num2 // j
+	else:
+		j += 1 
+print(a)
+print(b)
