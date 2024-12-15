@@ -11,3 +11,17 @@ while i < len(arr) - 1:
     i +=1 
 print(arr)
 
+
+
+# a = [7, 5, 9, 2, 8]
+# i = 0
+# while i < len(a)-2:
+#     j = i 
+#     mini = i
+#     while j < len(a)-1:
+#         if a[j] < a[mini]:
+#             mini = j 
+#         j += 1 
+#     a[i], a[mini] = a[mini], a[i]
+#     i += 1
+# print(a)
