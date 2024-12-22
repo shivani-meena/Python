@@ -1,3 +1,5 @@
+#Brute force
+
 def partition(a,l,h):
     pivot = a[l]
     start = l
@@ -28,4 +30,19 @@ while i >= 0:
         sec_max = a[i]
         break
     i -= 1
+print(sec_max)
+
+
+# optimized
+a = [7, 7, 7, 6]
+i = 0
+max = 0
+sec_max = -1
+while i < len(a):
+    if a[i] > max:
+        sec_max = max
+        max = a[i]
+    elif a[i] > sec_max and a[i] < max:
+        sec_max = a[i]
+    i += 1 
 print(sec_max)
